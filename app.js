@@ -1,10 +1,14 @@
+function handleSubmit(event){
+    event.preventDefault();
+    let input = document.querySelector('input[name="ratingBtn"]:checked');
+    
+        document.querySelector(".card-rating").style.display = `none`;
+        document.querySelector(".card-thankyou").style.display = `flex`;
+        document.getElementById("rating-message").innerHTML = `You selected ${input.value} out of 5`;
+     }
+   
+let form=document.getElementById("form");
+form.addEventListener("submit",handleSubmit);
 
-function submit(){
+
   
-    document.querySelector(".card-rating").style.display = "none";
-    document.querySelector(".card-thankyou").style.display = "flex";
-}
-
-function selectButton(button){
-    document.getElementById("rating-sentence").innerHTML = `You selected <span id='rating-text'> ${button}</span> out of 5`;
-}
