@@ -10,7 +10,7 @@
 
 </head>
 <body>
-
+  <main>
         <!-- Rating state start -->
       <div class="card card-rating">   
           <div class="image-wrapper">
@@ -21,16 +21,22 @@
 
           <p>Please let us know how we did with your support request. All feedback is appreciated 
             to help us improve our offering!</p>
-        
-          <div class="ratings-container">
-            <button class="ratingBtn"  onclick="selectButton('1');" >1</button>
-            <button class="ratingBtn"  onclick="selectButton('2');">2</button>
-            <button class="ratingBtn"  onclick="selectButton('3');">3</button>
-            <button class="ratingBtn"  onclick="selectButton('4');">4</button>
-            <button class="ratingBtn"  onclick="selectButton('5');">5</button>  
-          </div>
+          <form id="form">
+            <div class="ratings-container">
+              <input type="radio"  name="ratingBtn" id="1"value="1">
+              <label for="1">1</label>
+              <input type="radio" name="ratingBtn" id="2"value="2">
+              <label for="2">2</label>
+              <input type="radio" name="ratingBtn" id="3"value="3">
+              <label for="3">3</label>
+              <input type="radio" name="ratingBtn" id="4"value="4">
+              <label for="4">4</label>
+              <input type="radio" name="ratingBtn" id="5"value="5">
+              <label for="5">5</label>
+            </div>
+            <input  type="submit" value="Submit" class="submitBtn" >
+          </form>
          
-          <input onclick="submit();" type="submit" value="Submit" class="submitBtn" >
         
       </div>
     
@@ -40,7 +46,7 @@
     <!-- Thank you state start -->
       <div class="card card-thankyou">
         <img src="images/illustration-thank-you.svg" alt="thank you image">
-        <p id="rating-sentence"> </p>
+        <p id="rating-message"> </p>
         <h1>Thank you!</h1>
         <p>  We appreciate you taking the time to give a rating. If you ever need more support, 
           don’t hesitate to get in touch!</p>
@@ -54,6 +60,10 @@
         Coded by <a href="#">Michaela Kovacova</a>.
       </div>
     -->
-<script src="app.js"></script>
+  </main>
+  <script src="app.js">
+
+  </script>
+
 </body>
 </html>
