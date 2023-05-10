@@ -7,8 +7,6 @@ function handleSubmit(event){
         document.querySelector(".card-thankyou").style.display = `flex`;
         document.getElementById("rating-message").innerHTML = `You selected ${input} out of 5`;
     
+}
 let form=document.getElementById("form");
 form.addEventListener("submit",handleSubmit);
-
-
-}
